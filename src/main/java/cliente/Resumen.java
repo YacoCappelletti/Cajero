@@ -47,7 +47,7 @@ public class Resumen extends javax.swing.JFrame {
         //Insertar transacciónes en las filas de la tabla.
         List<Transaccion> transacciones;
         
-        transacciones = transaccionDAO.filtrar(3);
+        transacciones = transaccionDAO.filtrar(cliente.getId());
         
         
         for(Transaccion e : transacciones){
@@ -58,10 +58,7 @@ public class Resumen extends javax.swing.JFrame {
            modelo.addRow(info);
         }
         
-        
-        
-        
-        
+
         
     }
 
